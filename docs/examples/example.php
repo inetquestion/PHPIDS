@@ -38,7 +38,7 @@ try {
     * with your variables_order settings
     */
     $request = array(
-        'REQUEST' => $_REQUEST,
+        //'REQUEST' => $_REQUEST,
         'GET' => $_GET,
         'POST' => $_POST,
         'COOKIE' => $_COOKIE
@@ -89,7 +89,6 @@ try {
         $compositeLog = new CompositeLogger();
 
         $compositeLog->addLogger(FileLogger::getInstance($init));
-
 
         /*
         * Note that you might also use different logging facilities
