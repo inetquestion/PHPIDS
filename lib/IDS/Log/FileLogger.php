@@ -163,7 +163,7 @@ class FileLogger implements LogInterface
             join(' ', $data->getTags()),
             urlencode(trim($attackedParameters)),
             urlencode($_SERVER['REQUEST_URI']),
-            $_SERVER['SERVER_ADDR']
+            isset($_SERVER['SERVER_ADDR']) ? $_SERVER['SERVER_ADDR'] : "localhost"
         );
 
         return $dataString;

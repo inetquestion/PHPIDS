@@ -279,7 +279,7 @@ class DatabaseLogger implements LogInterface
             $this->statement->bindParam('ip', $ip);
             $this->statement->bindParam('ip2', $ip2);
             $this->statement->bindParam('impact', $impact);
-            $this->statement->bindParam('origin', $_SERVER['SERVER_ADDR']);
+            $this->statement->bindParam('origin', isset($_SERVER['SERVER_ADDR']) ? $_SERVER['SERVER_ADDR'] : "localhost");
 
             if (!$this->statement->execute()) {
 
