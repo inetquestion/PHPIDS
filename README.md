@@ -2,7 +2,7 @@
 
 # PHPIDS
 
-UPDATE The **master** branch over at [https://github.com/PHPIDS/PHPIDS](https://github.com/PHPIDS/PHPIDS) seems to be broken due to a number of issues including the removal of the Log/ directory. I took the Log/ directory from v0.7 and made a few small modifications to get it working again. Use as your own risk :)
+**UPDATE - Jan 2020** The **master** branch over at [https://github.com/PHPIDS/PHPIDS](https://github.com/PHPIDS/PHPIDS) seems to be unmaintained for years. It is also broken due to a number of issues including the removal of the Log/ directory and associated PHPH files in one of the commits. I took the Log/ directory from v0.7 and made a few small modifications to get it working again. To get it up and running, follow the instructions in the **Instructions** section below. This has not been extensively tested so use at your own risk :)
 
 PHPIDS (PHP-Intrusion Detection System) is a simple to use, well structured, fast and state-of-the-art
 security layer for your PHP based web application. The IDS **neither strips, sanitizes nor filters any
@@ -15,6 +15,20 @@ a warning message for the attacker or even ending the user’s session.
 PHPIDS enables you to see who’s attacking your site and how and all without the tedious trawling of
 logfiles or searching hacker forums for your domain. Last but not least it’s licensed under the fair LGPL!
 
+## Instructions
+
+Make sure you have **Composer** installed and then run the following in the main directory:
+
+```
+composer dump-autoload -o
+```
+
+If you want to run the included example (docs/example/example.php), you'll want to do the following:
+
+```
+mkdir lib/IDS/tmp
+touch lib/IDS/tmp/phpids_log.txt
+```
 
 ## Contributions
 
