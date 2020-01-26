@@ -64,7 +64,7 @@ class CompositeLogger
     /**
      * Iterates through registered loggers and executes them
      *
-     * @param object $data IDS_Report object
+     * @param object $data Report object
      * 
      * @return void
      */
@@ -91,7 +91,7 @@ class CompositeLogger
     /**
      * Registers a new logging wrapper
      *
-     * Only valid IDS_Log_Interface instances passed to this function will be 
+     * Only valid LogInterface instances passed to this function will be 
      * registered
      *
      * @return void
@@ -112,7 +112,7 @@ class CompositeLogger
     /**
      * Removes a logger
      *
-     * @param object $logger IDS_Log_Interface object
+     * @param object $logger LogInterface object
      * 
      * @return boolean
      */
