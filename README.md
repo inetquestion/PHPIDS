@@ -2,6 +2,8 @@
 
 # PHPIDS
 
+UPDATE The **master** branch over at [https://github.com/PHPIDS/PHPIDS](https://github.com/PHPIDS/PHPIDS) seems to be broken due to a number of issues including the removal of the Log/ directory. I took the Log/ directory from v0.7 and made a few small modifications to get it working again. Use as your own risk :)
+
 PHPIDS (PHP-Intrusion Detection System) is a simple to use, well structured, fast and state-of-the-art
 security layer for your PHP based web application. The IDS **neither strips, sanitizes nor filters any
 malicious input**, it simply recognizes when an attacker tries to break your site and reacts in exactly
