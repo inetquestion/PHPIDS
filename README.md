@@ -23,7 +23,7 @@ Make sure you have **Composer** installed and then run the following in the main
 composer dump-autoload -o
 ```
 
-If you want to run the included example (docs/example/example.php), you'll want to do the following:
+If you want to run the included example (docs/examples/example.php), you'll want to do the following:
 
 ```
 mkdir lib/IDS/tmp
